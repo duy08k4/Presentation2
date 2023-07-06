@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link google Fonts -->
+   
+    <!-- ----------------- -->
+    <title>Presentations</title>
+</head>
+
+<body>
+    <div class="container">
+        <img class="meteorite_animate" src="./img/meteorite1.gif" alt="">
+        <div class="bannerGame">
+            <div class="bannerGame--spacecraftDoor bannerGame--spacecraftDoorLeft"></div>
+            <div class="bannerGame--contentBox">
+                <h1 class="bannerGame--contentBox__content">SpaceWalk</h1>
+            </div>
+            <div class="bannerGame--spacecraftDoor bannerGame--spacecraftDoorRight"></div>
+        </div>
+        <div class="animate">
+            <img class="planet" src="./img/planet2.png" alt="">
+            <img class="astrounatRocket" src="./img/astronaut_animate.gif" alt="">
+        </div>
+        <img class="astrounat" src="./img/astronautLie.png" alt="">
+
+        <div class="btnBox">
+            <button class="startBtn">Let's go</button>
+        </div>
+    </div>
+
+    <div class="mainPage">
+        <img class="mainPage--meteorite3" src="./img/meteorite3.png" alt="">
+        <div class="mainPage--bannerGame">
+            <div class="mainPage--bannerGame--spaceDoor mainPage--bannerGame--spaceDoorLeft"></div>
+            <div class="mainPage--bannerGame--contentBox">
+                <h1 class="mainPage--bannerGame--contentBox__content">Missions</h1>
+            </div>
+            <div class="mainPage--bannerGame--spaceDoor mainPage--bannerGame--spaceDoorRight"></div>
+        </div>
+
+        <img class="mainPage--satellite" src="./img/satellite.png" alt="">
+        <img class="mainPage--astronaut2" src="./img/astronaut2.png" alt="">
+        <div class="questionBox"></div>
+
+        <div class="changeBtnBox">
+            <button class="change prev">Prev</button>
+            <button class="change next">Next</button>
+        </div>
+    </div>
+
+    <div class="questionForm">
+        <img class="questionForm--meteorite1" src="./img/meteorite1.gif" alt="">
+        <div class="questionFormTop">
+            <div class="questionBoardBox">
+                <div class="board fontAll">
+
+                </div>
+            </div>
+
+            <div class="scoreBoardBox">
+                <div class="scoreBoard__position">
+                    <button class="descriptionBtn">Giải thích</button>
+                </div>
+                <div class="timeBox">
+                    <div class="time">
+                        <h1 class="timeNumber"></h1>
+                    </div>
+
+                    <button class="backForm"><i class="fas fa-angle-double-right"></i></button>
+                    <button class="backScoreBtn">Quay lại</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="questionFormBottom">
+            <div id="cA" class="answer firstAnswer ">
+                <span class="order">A</span>
+                <p class="answerContent answerContentA fontAll"></p>
+                <img class="imgAnswer imgAnswer1" src="./img/planet1.png" alt="">
+            </div>
+
+            <div id="cB" class="answer secondAnswer">
+                <span class="order">B</span>
+                <p class="answerContent answerContentB fontAll"></p>
+                <img class="imgAnswer imgAnswer2" src="./img/planet2.png" alt="">
+            </div>
+
+            <div id="cC" class="answer thirdAnswer">
+                <span class="order">C</span>
+                <p class="answerContent answerContentC fontAll"></p>
+                <img class="imgAnswer imgAnswer3" src="./img/planet3.png" alt="">
+            </div>
+
+            <div id="cD" class="answer fouthAnswer">
+                <span class="order">D</span>
+                <p class="answerContent answerContentD fontAll"></p>
+                <img class="imgAnswer imgAnswer4" src="./img/planet4.png" alt="">
+            </div>
+        </div>
+
+        <div class="descriptionPage">
+            <div class="descriptionForm fontAll"></div>
+            <button class="closeDescription"><i class="fas fa-times"></i></button>
+        </div>
+    </div>
+
+    <div class="endForm">
+        <div class="endFormLeft">
+            <div class="totalScoreBoard">
+                <div class="scoreTitle">
+                    <h1 class="scoreTitle__content">Điểm số</h1>
+                </div>
+
+                <div class="scoreShowcase">
+                    <div class="scoreBranch">
+                        <label class="titleBranch">Điểm: </label>
+                        <p class="branchContent branchScore"></p>
+                    </div>
+
+                    <div class="scoreBranch">
+                        <label class="titleBranch">Câu đúng: </label>
+                        <p class="branchContent branchTrue"></p>
+                    </div>
+
+                    <div class="scoreBranch">
+                        <label class="titleBranch">Câu sai: </label>
+                        <p class="branchContent branchFalse"></p>
+                    </div>
+                </div>
+
+                <div class="scoreButton">
+                    <button class="fakeRestartBtn">Chơi lại</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="endFormRight">
+            <!-- <div class="resultTag">
+                <div class="resultTitleBox">
+                    <h1 class="resultTitleContent">Câu 1</h2>
+                    <button value="" class="overviewQuestBtn">Xem</button>
+                </div>
+
+                <div class="resultBox">
+                    <div class="resultShowcase">
+                        <div class="resultIcon active">
+                            <p class="resultIconContent">A</p>
+                        </div>
+
+                        <div class="resultIcon wrong">
+                            <p class="resultIconContent">B</p>
+                        </div>
+
+                        <div class="resultIcon">
+                            <p class="resultIconContent">C</p>
+                        </div>
+
+                        <div class="resultIcon">
+                            <p class="resultIconContent">D</p>
+                        </div>
+                    </div>
+                    
+                    <div class="amountChooseBox">
+                        <label class="amountChooseBoxTitle">Số lần chọn: </label>
+                        <p class="amountChooseBoxContent">3</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="confirmPage">
+            <div class="confirmForm">
+                <h1 class="confirmTitle">Chơi lại?</h1>
+                <div class="confirmBtnBox">
+                    <button class="confirmBtn acceptBtn">Xác nhận</button>
+
+                    <button class="confirmBtn cancelBtn">Từ chối</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js" defer></script>
+    <script src="./setUpQuestion.js"></script>
+    <script src="./showResult.js"></script>
+</body>
+
+</html>
