@@ -185,6 +185,7 @@ function reviewQuest(value) {
     document.querySelector(".questionForm").setAttribute("style", "opacity: 1; transform: translateX(0);")
     document.querySelector(".time").setAttribute("style", "display: none")
     document.querySelector(".backScoreBtn").setAttribute("style", "display: block");
+    document.querySelector(".backForm").removeAttribute("style")
     document.querySelector(".questionForm--meteorite1").setAttribute("style", "display: none;")
     
     const idReview = value;
