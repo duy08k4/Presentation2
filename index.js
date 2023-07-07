@@ -149,7 +149,6 @@ function loadQuest() {
         allQuestReped.forEach((val) => {
             const getQuestionId = document.querySelector(".c" + val);
             document.querySelector(".questionBox").removeChild(getQuestionId)
-            getQuestionId.querySelector(".questionBtn").setAttribute("style", "display: none")
             setTimeout(() => {
                 handleButton()
             }, 500)
@@ -171,7 +170,6 @@ function selectQuestion() {
 
             setTimeout(() => {
                 document.querySelector(".questionBox").removeChild(tagQuestion)
-                tagQuestion.querySelector(".questionBtn").setAttribute("style", "display: none")
             }, 1000)
 
             let getQuestionForm = document.querySelector(".questionForm");
