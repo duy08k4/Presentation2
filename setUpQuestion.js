@@ -28,6 +28,24 @@ let questionForm = [
         d: "Đáp án D",
         t: "Đáp án C",
         des: "Giải thích cho câu 3"
+    },
+    {
+        content: "Nội dung câu hỏi 3",
+        a: "Đáp án A",
+        b: "Đáp án B",
+        c: "Đáp án C",
+        d: "Đáp án D",
+        t: "Đáp án C",
+        des: "Giải thích cho câu 3"
+    },
+    {
+        content: "Nội dung câu hỏi 3",
+        a: "Đáp án A",
+        b: "Đáp án B",
+        c: "Đáp án C",
+        d: "Đáp án D",
+        t: "Đáp án C",
+        des: "Giải thích cho câu 3"
     }
 ]
 
@@ -38,7 +56,7 @@ let questionSize = 24;
 let answerSize = 24;
 
 // KÍCH CỠ CHỮ CỦA PHẦN GIẢI THÍCH
-let descriptionSize = 32;
+let descriptionSize = 24;
 
 // KIỂU CHỮ CỦA CÂU TRẢ LỜI, NỘI DUNG CÂU HỎI, PHẦN GIẢI THÍCH
 // LƯU Ý: KIỂU CHỮ NÀY ÁP DỤNG CHO CẢ 3

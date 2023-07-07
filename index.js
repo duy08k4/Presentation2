@@ -138,7 +138,6 @@ questionForm.forEach((val, index) => {
     getContainerQuestion.innerHTML += tagQuestion_Form;
 
     if (index == questionForm.length - 1) {
-        document.querySelector(".prev").click();
         selectQuestion();
         loadQuest();
     }
@@ -149,8 +148,11 @@ function loadQuest() {
     if (allQuestReped.length !== 0) {
         allQuestReped.forEach((val) => {
             const getQuestionId = document.querySelector(".c" + val);
-
+            document.querySelector(".questionBox").removeChild(getQuestionId)
             getQuestionId.querySelector(".questionBtn").setAttribute("style", "display: none")
+            setTimeout(() => {
+                handleButton()
+            }, 500)
         })
     }
 }
@@ -168,6 +170,7 @@ function selectQuestion() {
             allQuestReped.push(question_active)
 
             setTimeout(() => {
+                document.querySelector(".questionBox").removeChild(tagQuestion)
                 tagQuestion.querySelector(".questionBtn").setAttribute("style", "display: none")
             }, 1000)
 
@@ -291,6 +294,14 @@ function checkAnswer(trueAnswer) {
     })
 }
 
+// Ẩn các nút bấm khi chỉ còn 1 câu hỏi
+function handleButton () {
+    const getAllAnswerTag = document.querySelectorAll(".questionTag");
+    if(getAllAnswerTag.length == 1) {
+        document.querySelector(".changeBtnBox").setAttribute("style", "display: none")
+    }
+}
+
 // Quay về menu câu hỏi
 let getBtnCloseQuestionForm = document.querySelector(".backForm");
 getBtnCloseQuestionForm.addEventListener("click", () => {
@@ -302,6 +313,7 @@ getBtnCloseQuestionForm.addEventListener("click", () => {
         document.querySelector(".timeNumber").innerHTML = setTime;
         document.querySelector(".time").removeAttribute("style");
         handleResult()
+        handleButton()
     }, 500)
 })
 
