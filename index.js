@@ -277,6 +277,7 @@ function checkAnswer(trueAnswer) {
                         const dataQuestLocal = allQuestReped.join(",");
                         localStorage.setItem("data", dataQuestLocal)
                     }, 1000)
+                    document.querySelector("#right").play();
                     logicVarriable += "," + getOrderAnswer.innerHTML + "T"
                     clearInterval(intervalTime)
                     status = true;
@@ -285,6 +286,7 @@ function checkAnswer(trueAnswer) {
                         getOrderAnswer.setAttribute("style", "border: solid 10px transparent; background-color: red; color: white;")
                         logicVarriable += "," + getOrderAnswer.innerHTML + "F"
                         answerClicked.push(val.id)
+                        document.querySelector("#wrong").play();
                     }
                 }
             }

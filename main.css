@@ -18,6 +18,12 @@ body {
     overflow: hidden;
 }
 
+.audioTag {
+    position: absolute;
+    top: -100%;
+    left: 0;
+}
+
 .container {
     z-index: 1;
     position: absolute;

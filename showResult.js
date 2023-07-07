@@ -95,6 +95,15 @@ function handleResult() {
                 }, 50 * index)
 
                 if (index === getLogicData.length - 1) {
+                    if(parseInt(localStorage.getItem("score")) == (toltalQuest* defaultScore)) {
+                        document.querySelector("#rightAll").play()
+                    } else {
+                        if(parseInt(localStorage.getItem("score")) == 0) {
+                            document.querySelector("#wrongAll").play()
+                        }
+                    }
+
+
                     document.querySelector(".branchScore").innerHTML = localStorage.getItem("score");
                     document.querySelector(".branchTrue").innerHTML = amountTrue;
                     document.querySelector(".branchFalse").innerHTML = toltalQuest - amountTrue;
@@ -110,6 +119,14 @@ function handleResult() {
                 setTimeout(() => {
                     document.querySelector(".container").setAttribute("style", "display: none")
                 }, 1000)
+
+                if(parseInt(score) == toltalScore) {
+                    document.querySelector("#rightAll").play()
+                } else {
+                    if(parseInt(score) == 0) {
+                        document.querySelector("#wrongAll").play()
+                    }
+                }
 
                 document.querySelector(".branchScore").innerHTML = score;
                 document.querySelector(".branchTrue").innerHTML = score / 5;

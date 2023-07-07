@@ -37,15 +37,6 @@ let questionForm = [
         d: "Đáp án D",
         t: "Đáp án C",
         des: "Giải thích cho câu 3"
-    },
-    {
-        content: "Nội dung câu hỏi 3",
-        a: "Đáp án A",
-        b: "Đáp án B",
-        c: "Đáp án C",
-        d: "Đáp án D",
-        t: "Đáp án C",
-        des: "Giải thích cho câu 3"
     }
 ]
 
